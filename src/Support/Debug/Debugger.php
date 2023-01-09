@@ -1,8 +1,8 @@
 <?php
 
-namespace MahaElshawardy\Mvccore\Support\Debug;
+namespace Mahaelshawardy\Mvccore\Support\Debug;
 
-use MahaElshawardy\Mvccore\Support\Facades\Filesystem\DirectoryComposer;
+use Mahaelshawardy\Mvccore\Support\Facades\Filesystem\DirectoryComposer;
 use Carbon\Carbon;
 
 class Debugger

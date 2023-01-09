@@ -1,13 +1,13 @@
 <?php
 
-namespace MahaElshawardy\Mvccore\Support\Facades\Router;
+namespace Mahaelshawardy\Mvccore\Support\Facades\Router;
 
-use MahaElshawardy\Mvccore\Support\Facades\Middleware\RegisterMiddlewares;
-use MahaElshawardy\Mvccore\Exceptions\RouteNotFoundException;
-use MahaElshawardy\Mvccore\Middlewares\Localization;
-use MahaElshawardy\Mvccore\Support\Http\Request;
-use MahaElshawardy\Mvccore\Support\Configs\Configs;
-use MahaElshawardy\Mvccore\Support\Debug\Debugger;
+use Mahaelshawardy\Mvccore\Support\Facades\Middleware\RegisterMiddlewares;
+use Mahaelshawardy\Mvccore\Exceptions\RouteNotFoundException;
+use Mahaelshawardy\Mvccore\Middlewares\Localization;
+use Mahaelshawardy\Mvccore\Support\Http\Request;
+use Mahaelshawardy\Mvccore\Support\Configs\Configs;
+use Mahaelshawardy\Mvccore\Support\Debug\Debugger;
 
 
 class Route

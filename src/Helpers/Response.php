@@ -1,8 +1,8 @@
 <?php
 
-namespace MahaElshawardy\Mvccore\Helpers;
+namespace Mahaelshawardy\Mvccore\Helpers;
 
-use MahaElshawardy\Mvccore\Support\Http\Header;
+use Mahaelshawardy\Mvccore\Support\Http\Header;
 
 class Response
 {

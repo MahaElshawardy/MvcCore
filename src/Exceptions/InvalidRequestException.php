@@ -1,8 +1,8 @@
 <?php
 
-namespace MahaElshawardy\Mvccore\Exceptions;
+namespace Mahaelshawardy\Mvccore\Exceptions;
 
-use MahaElshawardy\Mvccore\Support\Facades\Exception\ExceptionHandler;
+use Mahaelshawardy\Mvccore\Support\Facades\Exception\ExceptionHandler;
 
 class InvalidRequestException extends ExceptionHandler
 {

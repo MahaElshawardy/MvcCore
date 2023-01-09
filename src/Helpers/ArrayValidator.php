@@ -1,6 +1,6 @@
 <?php
 
-namespace MahaElshawardy\Mvccore\Helpers;
+namespace Mahaelshawardy\Mvccore\Helpers;
 
 class ArrayValidator
 {

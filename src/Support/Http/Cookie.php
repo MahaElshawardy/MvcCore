@@ -1,8 +1,8 @@
 <?php
 
-namespace MahaElshawardy\Mvccore\Support\Http;
+namespace Mahaelshawardy\Mvccore\Support\Http;
 
-use MahaElshawardy\Mvccore\Helpers\ArrayValidator;
+use Mahaelshawardy\Mvccore\Helpers\ArrayValidator;
 
 class Cookie
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace MahaElshawardy\Mvccore\Support\Configs;
+namespace Mahaelshawardy\Mvccore\Support\Configs;
 
-use MahaElshawardy\Mvccore\Support\Debug\Debugger;
-use MahaElshawardy\Mvccore\Support\Facades\Filesystem\DirectoryComposer;
+use Mahaelshawardy\Mvccore\Support\Debug\Debugger;
+use Mahaelshawardy\Mvccore\Support\Facades\Filesystem\DirectoryComposer;
 
 class Configs
 {

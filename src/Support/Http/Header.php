@@ -1,6 +1,6 @@
 <?php
 
-namespace MahaElshawardy\Mvccore\Support\Http;
+namespace Mahaelshawardy\Mvccore\Support\Http;
 
 class Header
 {
