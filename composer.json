@@ -1,0 +1,17 @@
+{
+    "name": "mahaelshawardy/mvccore",
+    "type": "library",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Mahaelshawardy\\Mvccore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maha Mohamed Elshawardy",
+            "email": "mahaelshawardy1@gmail.com"
+        }
+    ],
+    "require": {}
+}
