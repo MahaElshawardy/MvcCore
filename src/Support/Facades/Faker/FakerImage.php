@@ -1,9 +1,9 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Support\Facades\Faker;
+namespace MahaElshawardy\Mvccore\Support\Facades\Faker;
 
-use MahaElshawardy\MvcCore\Support\Facades\Filesystem\DirectoryComposer;
-use MahaElshawardy\MvcCore\Support\Facades\Filesystem\DirectoryMaker;
+use MahaElshawardy\Mvccore\Support\Facades\Filesystem\DirectoryComposer;
+use MahaElshawardy\Mvccore\Support\Facades\Filesystem\DirectoryMaker;
 
 class FakerImage
 {

@@ -14,5 +14,7 @@
             "email": "mahaelshawardy1@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "nesbot/carbon": "2.x-dev"
+    }
 }

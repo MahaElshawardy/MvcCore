@@ -1,6 +1,6 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Support\Facades\Localization;
+namespace MahaElshawardy\Mvccore\Support\Facades\Localization;
 
 use JTL\Shop;
 

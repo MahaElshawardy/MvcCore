@@ -1,10 +1,10 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Traits;
+namespace MahaElshawardy\Mvccore\Traits;
 
-use MahaElshawardy\MvcCore\Validations\ValidateInputs;
-use MahaElshawardy\MvcCore\Helpers\ArrayValidator;
-use MahaElshawardy\MvcCore\Helpers\Response;
+use MahaElshawardy\Mvccore\Validations\ValidateInputs;
+use MahaElshawardy\Mvccore\Helpers\ArrayValidator;
+use MahaElshawardy\Mvccore\Helpers\Response;
 
 trait ValidationTrait
 {

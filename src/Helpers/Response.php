@@ -1,9 +1,8 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Helpers;
+namespace MahaElshawardy\Mvccore\Helpers;
 
-use MahaElshawardy\MvcCore\Support\Http\Header;
-use PHPUnit\Util\Json;
+use MahaElshawardy\Mvccore\Support\Http\Header;
 
 class Response
 {

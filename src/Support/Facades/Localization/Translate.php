@@ -1,10 +1,10 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Support\Facades\Localization;
+namespace MahaElshawardy\Mvccore\Support\Facades\Localization;
 
-use MahaElshawardy\MvcCore\Support\Facades\Localization\Lang;
-use MahaElshawardy\MvcCore\Support\Facades\Filesystem\DirectoryComposer;
-use MahaElshawardy\MvcCore\Support\Debug\Debugger;
+use MahaElshawardy\Mvccore\Support\Facades\Localization\Lang;
+use MahaElshawardy\Mvccore\Support\Facades\Filesystem\DirectoryComposer;
+use MahaElshawardy\Mvccore\Support\Debug\Debugger;
 
 class Translate
 {

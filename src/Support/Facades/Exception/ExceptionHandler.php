@@ -1,8 +1,8 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Support\Facades\Exception;
+namespace MahaElshawardy\Mvccore\Support\Facades\Exception;
 
-use MahaElshawardy\MvcCore\Support\Debug\Debugger;
+use MahaElshawardy\Mvccore\Support\Debug\Debugger;
 
 class ExceptionHandler extends \Exception
 {

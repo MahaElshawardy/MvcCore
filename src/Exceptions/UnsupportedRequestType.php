@@ -1,8 +1,8 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Exceptions;
+namespace MahaElshawardy\Mvccore\Exceptions;
 
-use MahaElshawardy\MvcCore\Support\Facades\Exception\ExceptionHandler;
+use MahaElshawardy\Mvccore\Support\Facades\Exception\ExceptionHandler;
 
 class UnsupportedRequestType extends ExceptionHandler
 {

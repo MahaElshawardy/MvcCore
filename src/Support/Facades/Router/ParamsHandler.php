@@ -1,6 +1,6 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Support\Facades\Router;
+namespace MahaElshawardy\Mvccore\Support\Facades\Router;
 
 class ParamsHandler
 {

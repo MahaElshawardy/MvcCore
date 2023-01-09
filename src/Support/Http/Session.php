@@ -1,8 +1,8 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Support\Http;
+namespace MahaElshawardy\Mvccore\Support\Http;
 
-use MahaElshawardy\MvcCore\Helpers\ArrayValidator;
+use MahaElshawardy\Mvccore\Helpers\ArrayValidator;
 
 class Session
 {

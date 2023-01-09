@@ -1,6 +1,6 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Support\Facades\Filesystem;
+namespace MahaElshawardy\Mvccore\Support\Facades\Filesystem;
 
 class DirectoryMaker
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Support\Http;
+namespace MahaElshawardy\Mvccore\Support\Http;
 
-use MahaElshawardy\MvcCore\Exceptions\UnsupportedAuthenticationType;
-use MahaElshawardy\MvcCore\Exceptions\InvalidRequestException;
-use MahaElshawardy\MvcCore\Exceptions\UnsupportedRequestType;
-use MahaElshawardy\MvcCore\Support\Debug\Debugger;
+use MahaElshawardy\Mvccore\Exceptions\UnsupportedAuthenticationType;
+use MahaElshawardy\Mvccore\Exceptions\InvalidRequestException;
+use MahaElshawardy\Mvccore\Exceptions\UnsupportedRequestType;
+use MahaElshawardy\Mvccore\Support\Debug\Debugger;
 
 class HttpRequest
 {

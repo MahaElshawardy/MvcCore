@@ -1,6 +1,6 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Support\Facades\Middleware;
+namespace MahaElshawardy\Mvccore\Support\Facades\Middleware;
 
 abstract class BaseMiddleware
 {

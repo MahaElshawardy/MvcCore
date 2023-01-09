@@ -1,8 +1,8 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Validations;
+namespace MahaElshawardy\Mvccore\Validations;
 
-use MahaElshawardy\MvcCore\Support\Facades\Localization\Lang;
+use MahaElshawardy\Mvccore\Support\Facades\Localization\Lang;
 
 class ValidationMessage
 {

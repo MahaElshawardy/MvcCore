@@ -1,8 +1,8 @@
 <?php
 
-namespace MahaElshawardy\MvcCore\Support\Facades\Localization;
+namespace MahaElshawardy\Mvccore\Support\Facades\Localization;
 
-use MahaElshawardy\MvcCore\Support\Http\Session;
+use MahaElshawardy\Mvccore\Support\Http\Session;
 
 class Currency
 {
