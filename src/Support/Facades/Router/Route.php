@@ -4,10 +4,8 @@ namespace Mahaelshawardy\MvcCore\Support\Facades\Router;
 
 use Mahaelshawardy\MvcCore\Support\Facades\Middleware\RegisterMiddlewares;
 use Mahaelshawardy\MvcCore\Exceptions\RouteNotFoundException;
-use Mahaelshawardy\MvcCore\Middlewares\Localization;
+use Tecsee\Calendar\Middlewares\Localization;
 use Mahaelshawardy\MvcCore\Support\Http\Request;
-use Mahaelshawardy\MvcCore\Support\Configs\Configs;
-use Mahaelshawardy\MvcCore\Support\Debug\Debugger;
 
 
 class Route
@@ -106,7 +104,7 @@ class Route
         if (!$fetch) {
             return;
         }
-        
+
         if (stripos($fetch, 'return') === 0) {
             $fetch = explode('=', $fetch)[1];
             $route = explode('&', $fetch)[0];
@@ -129,16 +127,16 @@ class Route
             return RouteHandler::call($action, $pluginId);
         }
 
-/*         if (!!stripos($fetch, '&') === true) {
-            $fetch = explode('&', $fetch)[1];
-        } else {
-            
-            $route = explode('=', $fetch)[1];
-            if ((int)$pluginId === (int)$route) {
-                return;
-            }
-        } */
-        
+        /*         if (!!stripos($fetch, '&') === true) {
+                    $fetch = explode('&', $fetch)[1];
+                } else {
+
+                    $route = explode('=', $fetch)[1];
+                    if ((int)$pluginId === (int)$route) {
+                        return;
+                    }
+                } */
+
         $route = explode('=', $fetch)[1];
 
         $action = self::$routes[$requestType][$route] ?? null;
@@ -160,37 +158,34 @@ class Route
     {
         $route = explode('io.php', $route)[1];
         $request = new Request();
-        $config = new Configs();
-        // if ($request->all()['io'] === $config->keyValue('ENTRY_POINT')) {
-            if (stripos($route, '?')) {
-                $route = explode('?', $route)[0];
+        if (stripos($route, '?')) {
+            $route = explode('?', $route)[0];
+        }
+        $action = self::$routes[$requestType][$route] ?? null;
+        if (!$action) {
+            $action = self::get_action($requestType, $route);
+            if ($action === false) {
+                throw new RouteNotFoundException();
             }
-            $action = self::$routes[$requestType][$route] ?? null;
-            if (!$action) {
-                $action = self::get_action($requestType, $route);
-                if ($action === false) {
-                    throw new RouteNotFoundException();
-                }
-            }
-            if ($route === '/csrf-token') {
-                $middlewares = RegisterMiddlewares::get_route_middleware_to_call();
-                foreach ($middlewares as $middleware) {
-                    $middleware = new $middleware();
-                    $middleware->handle();
-                }
-                return RouteHandler::call($action);
-            }
-            $middlewares = RegisterMiddlewares::list_called_middlewares();
-            foreach ($middlewares as $key => $middleware) {
+        }
+        if ($route === '/csrf-token') {
+            $middlewares = RegisterMiddlewares::get_route_middleware_to_call();
+            foreach ($middlewares as $middleware) {
                 $middleware = new $middleware();
-                $middlewareAction = $middleware->get_action($action);
-
-                if ($middlewareAction === $action) {
-                    $middleware->handle();
-                }
+                $middleware->handle();
             }
             return RouteHandler::call($action);
-        // }
+        }
+        $middlewares = RegisterMiddlewares::list_called_middlewares();
+        foreach ($middlewares as $key => $middleware) {
+            $middleware = new $middleware();
+            $middlewareAction = $middleware->get_action($action);
+
+            if ($middlewareAction === $action) {
+                $middleware->handle();
+            }
+        }
+        return RouteHandler::call($action);
     }
 
     /**
@@ -228,10 +223,10 @@ class Route
             }
             // convert route name intor regex pattern
             $routeRegex = "@^" . preg_replace_callback(
-                '/\{(\w+)(:[^}]+)?}/',
-                fn ($match) => isset($match[2]) ? "({$match[2]})" : '(\w+)',
-                $route
-            ) . "$@";
+                    '/\{(\w+)(:[^}]+)?}/',
+                    fn($match) => isset($match[2]) ? "({$match[2]})" : '(\w+)',
+                    $route
+                ) . "$@";
 
             // test and match current route against $routeRegex
             if (preg_match_all($routeRegex, $uri, $valueMatches)) {
@@ -298,7 +293,7 @@ class Route
         self::$routes[$requestType][$route] = $action;
     }
 
-    public static function  routes_list(): array
+    public static function routes_list(): array
     {
         return self::$routes;
     }

@@ -4,7 +4,7 @@ namespace Mahaelshawardy\MvcCore\Support\Facades\Router;
 
 class RouteHandler
 {
-    private const CONTROLLERS_NAMESPACE = 'MvcCore\\Jtl\\Controllers\\';
+    private const CONTROLLERS_NAMESPACE = 'Tecsee\\Calendar\\Controllers\\';
 
     public static function call($handler, int $pluginId = null)
     {
