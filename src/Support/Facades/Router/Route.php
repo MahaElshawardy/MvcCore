@@ -7,7 +7,6 @@ use Mahaelshawardy\MvcCore\Exceptions\RouteNotFoundException;
 use Tecsee\Calendar\Middlewares\Localization;
 use Mahaelshawardy\MvcCore\Support\Http\Request;
 
-
 class Route
 {
     /**

@@ -8,9 +8,9 @@ class DirectoryComposer
 
     private string $shopRoot;
 
-    private const LEVEL_TO_BACK_PLUGIN_PATH = 5;
+    private const LEVEL_TO_BACK_PLUGIN_PATH = 8;
 
-    private const LEVEL_TO_BACK_SHOP_PATH = 7;
+    private const LEVEL_TO_BACK_SHOP_PATH = 10;
 
     public function __construct()
     {
