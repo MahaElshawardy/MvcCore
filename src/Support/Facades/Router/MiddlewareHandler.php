@@ -1,6 +1,6 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Support\Facades\Router;
+namespace Mahaelshawardy\MvcCore\Support\Facades\Router;
 
 class MiddlewareHandler
 {

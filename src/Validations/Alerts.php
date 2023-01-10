@@ -1,9 +1,9 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Validations;
+namespace Mahaelshawardy\MvcCore\Validations;
 
-use Mahaelshawardy\Mvccore\Support\Facades\Localization\Lang;
-use Mahaelshawardy\Mvccore\Helpers\Redirect;
+use Mahaelshawardy\MvcCore\Support\Facades\Localization\Lang;
+use Mahaelshawardy\MvcCore\Helpers\Redirect;
 use JTL\Alert\Alert;
 use JTL\Shop;
 

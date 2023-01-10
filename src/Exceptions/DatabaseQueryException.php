@@ -1,8 +1,8 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Exceptions;
+namespace Mahaelshawardy\MvcCore\Exceptions;
 
-use Mahaelshawardy\Mvccore\Support\Facades\Exception\ExceptionHandler;
+use Mahaelshawardy\MvcCore\Support\Facades\Exception\ExceptionHandler;
 
 class DatabaseQueryException extends ExceptionHandler
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Helpers;
+namespace Mahaelshawardy\MvcCore\Helpers;
 
-use Mahaelshawardy\Mvccore\Support\Http\Server;
+use Mahaelshawardy\MvcCore\Support\Http\Server;
 
 class Redirect
 {

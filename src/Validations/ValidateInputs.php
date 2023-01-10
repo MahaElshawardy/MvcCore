@@ -1,10 +1,10 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Validations;
+namespace Mahaelshawardy\MvcCore\Validations;
 
-use Mahaelshawardy\Mvccore\Exceptions\UnsupportedValidationRuleException;
-use Mahaelshawardy\Mvccore\Support\Facades\Localization\Translate;
-use Mahaelshawardy\Mvccore\Helpers\ArrayValidator;
+use Mahaelshawardy\MvcCore\Exceptions\UnsupportedValidationRuleException;
+use Mahaelshawardy\MvcCore\Support\Facades\Localization\Translate;
+use Mahaelshawardy\MvcCore\Helpers\ArrayValidator;
 
 class ValidateInputs
 {

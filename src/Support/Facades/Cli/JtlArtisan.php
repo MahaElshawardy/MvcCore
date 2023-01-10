@@ -1,6 +1,6 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Support\Facades\Cli;
+namespace Mahaelshawardy\MvcCore\Support\Facades\Cli;
 
 class JtlArtisan
 {

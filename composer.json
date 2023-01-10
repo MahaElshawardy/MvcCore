@@ -2,19 +2,20 @@
     "name": "mahaelshawardy/mvccore",
     "type": "library",
     "license": "mit",
+    "require": {
+        "nesbot/carbon": "2.x-dev",
+        "reneknox/fetch": "dev-master"
+    },
     "autoload": {
         "psr-4": {
-            "Mahaelshawardy\\Mvccore\\": "src/"
+            "Mahaelshawardy\\MvcCore\\": "src/"
         }
     },
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Maha Mohamed Elshawardy",
             "email": "Mahaelshawardy1@gmail.com"
         }
     ],
-    "require": {
-        "nesbot/carbon": "2.x-dev"
-    }
+    "minimum-stability": "dev"
 }

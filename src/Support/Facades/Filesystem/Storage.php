@@ -1,8 +1,8 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Support\Facades\Filesystem;
+namespace Mahaelshawardy\MvcCore\Support\Facades\Filesystem;
 
-use Mahaelshawardy\Mvccore\Helpers\Response;
+use Mahaelshawardy\MvcCore\Helpers\Response;
 
 class Storage
 {

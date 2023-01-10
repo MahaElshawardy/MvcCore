@@ -1,6 +1,6 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Support\Http;
+namespace Mahaelshawardy\MvcCore\Support\Http;
 
 class Request
 {

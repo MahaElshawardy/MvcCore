@@ -1,6 +1,6 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Support\Facades\Middleware;
+namespace Mahaelshawardy\MvcCore\Support\Facades\Middleware;
 
 class RegisterMiddlewares
 {

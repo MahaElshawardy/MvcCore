@@ -1,6 +1,6 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Support\Facades\Faker;
+namespace Mahaelshawardy\MvcCore\Support\Facades\Faker;
 
 class Faker
 {

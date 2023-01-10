@@ -1,12 +1,12 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Helpers;
+namespace Mahaelshawardy\MvcCore\Helpers;
 
-use Mahaelshawardy\Mvccore\Support\Http\Header;
+use Mahaelshawardy\MvcCore\Support\Http\Header;
 
 class Response
 {
-    public static function json($data, $statusCode = 200)
+    public static function json(array $data, $statusCode = 200)
     {
         $header = new Header();
         $header->set('Content-Type', 'application/json; charset=utf-8')

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mahaelshawardy\Mvccore\Support\Facades\Authentication;
+namespace Mahaelshawardy\MvcCore\Support\Facades\Authentication;
 
 use JTL\Session\AbstractSession;
 use JTL\Shop;
